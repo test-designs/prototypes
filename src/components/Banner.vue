@@ -28,6 +28,7 @@ export default {
   rgba(39, 59, 73, 0.4)),
   // url("../assets/GettyImages-554992459.png");
   url("../assets/background.jpg");
+  // url("./static/background.jpg");
   background-repeat: no-repeat;
   // background-size: cover;
   background-size: 175% auto;
