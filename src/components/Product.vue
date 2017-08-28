@@ -87,8 +87,10 @@ button {
     transition: box-shadow .2s;
     transition: transform .2s;
     &:hover {
-      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.30);
-      transform: scale(1.25);
+      // box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.30);
+      // transform: scale(1.25);
+      box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.30);
+      transform: scale(1.01);
     }
   }
 }
