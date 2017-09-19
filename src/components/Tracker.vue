@@ -8,11 +8,11 @@
       <div class="future"></div>
     </div>
     <div class="progress-text">
-      <div class="past"></div>
+      <div class="past"><p>Pre-Qualify</p></div>
       <div class="present"><p>Select Product</p></div>
-      <div class="future"></div>
-      <div class="future"></div>
-      <div class="future"></div>
+      <div class="future"><p>Income</p></div>
+      <div class="future"><p>Properties</p></div>
+      <div class="future"><p>Review &amp; Submit</p></div>
     </div>
   </div>
 </template>
@@ -32,42 +32,43 @@ export default {
 <style scoped lang="scss">
 .tracker {
   width: 100%;
-  height: 52px;
+  height: 50px;
   border-bottom: 1px solid #C9CED2;
   .progress-text {
     display: absolute;
     margin-top: -35px;
-    .past {
-      display: none;
+    text-align: center;
+    div {
+      cursor: pointer;
+      position: relative;
+      top: -15px;
     }
-    .present {
-      p {
-        font-family: ProximaNova;
-        font-weight: 600;
-        font-size: 16px;
-        color: #273B49;
-        margin: 0 auto;
-        text-align: center;
-      }
+    p {
+      font-family: ProximaNova;
+      font-weight: 300;
+      font-size: 16px;
     }
-    .future {
+    .past p {
       display: none;
+      color: #011728;
+    }
+    .present p {
+      font-weight: 600;
+      color: #273B49;
+    }
+    .future p {
+      display: none;
+      color: #AEB5BB;
     }
   }
   .progress-lines {
     height: 100%;
     border-bottom: 1px solid #C9CED2;
-    white-space: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2px;
     div {
-      display: inline-block;
-      width: 19%;
-      height: 100%;
-      margin-right: 1px;
-      position: relative;
-      bottom: 3px;
-      &:last-child {
-        margin-right: 0;
-      }
+      margin-bottom: -1px;
     }
     .past {
       border-bottom: 3px solid #018BBB;
@@ -79,7 +80,16 @@ export default {
 }
 @media only screen and (min-width: 768px) {
   .tracker {
-
+    .progress-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      .past p {
+        display: inline-block;
+      }
+      .future p {
+        display: inline-block;
+      }
+    }
   }
 }
 </style>

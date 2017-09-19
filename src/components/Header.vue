@@ -22,7 +22,6 @@ export default {
   name: 'header',
   data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
       phone: '888-888-8888',
       logo: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTM4cHgiIGhlaWdodD0iNDhweCIgdmlld0JveD0iMCAwIDEzOCA0OCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDYuMiAoNDQ0OTYpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkdyb3VwPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikdyb3VwIj4KICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0iI0Q4RDhEOCIgeD0iMCIgeT0iMCIgd2lkdGg9IjEzOCIgaGVpZ2h0PSI0OCI+PC9yZWN0PgogICAgICAgICAgICA8dGV4dCBpZD0ieW91ckJhbmsiIGZvbnQtZmFtaWx5PSJQcm94aW1hTm92YS1TZW1pYm9sZCwgUHJveGltYSBOb3ZhIiBmb250LXNpemU9IjE2IiBmb250LXdlaWdodD0iNTAwIiBmaWxsPSIjNjg3NjgwIj4KICAgICAgICAgICAgICAgIDx0c3BhbiB4PSIzNS4zNjQiIHk9IjI4Ij55b3VyQmFuazwvdHNwYW4+CiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==',
     };
@@ -100,9 +99,12 @@ header {
     position: fixed;
     top: 0;
     z-index: 2;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .container {
     height: 72px;
+    padding: 0 10px;
     grid-template-columns: 2fr 3fr 2fr 1fr 2fr 2fr;
     grid-template-areas: "back . logo . save phone";
     grid-column-gap: 20px;

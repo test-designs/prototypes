@@ -1,9 +1,10 @@
 <template>
   <div class="banner">
     <div>
-      <h1 class="mobile">Here's your offers!</h1>
-      <h1 class="desktop">You can get up to {{offerAmount}}</h1>
-      <h2>Choose which home equity solution works best for you.</h2>
+      <!-- <h1 class="mobile">Here's your offers!</h1> -->
+      <h1 class="mobile">{{ headingMobile }}</h1>
+      <h1 class="desktop">{{ headingDesktop }}</h1>
+      <h2>{{ headingSub }}</h2>
     </div>
   </div>
 </template>
@@ -11,6 +12,20 @@
 <script>
 export default {
   name: 'banner',
+  props: {
+    headingMobile: {
+      type: String,
+      required: true,
+    },
+    headingDesktop: {
+      type: String,
+      required: true,
+    },
+    headingSub: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {
       msg: 'Welcome to Your Vue.js App',

@@ -1,23 +1,22 @@
 <template>
   <div id="app">
-    <header-bar></header-bar>
+    <grid></grid>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header';
+import Grid from '@/components/Grid';
 
 export default {
   name: 'app',
   components: {
-    HeaderBar: Header,
+    Grid,
   },
 };
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  
 }
 </style>

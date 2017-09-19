@@ -1,10 +1,7 @@
 <template>
-  <div class="offers">
+  <div class="personal-info">
     <header-bar></header-bar>
-    <banner
-      :headingMobile="mobileHeading"
-      :headingDesktop="desktopHeading"
-      :headingSub="subHeading"></banner>
+    <banner heading-mobile="Let's get you qualified." heading-desktop="Let's get you qualified."></banner>
     <page></page>
   </div>
 </template>
@@ -15,7 +12,7 @@ import Banner from '@/components/Banner';
 import Page from '@/components/Page';
 
 export default {
-  name: 'offers',
+  name: 'personal-info',
   components: {
     HeaderBar: Header,
     Banner,
@@ -23,9 +20,7 @@ export default {
   },
   data() {
     return {
-      mobileHeading: 'Here\'s your offers',
-      desktopHeading: 'Here\'s your offers',
-      subHeading: 'Get your estimated loan amount and rate without impacting your credit score.',
+      msg: 'OOGABOOGA',
     };
   },
 };
