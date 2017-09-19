@@ -9,13 +9,13 @@
         <p class="heading2paragraph">Right now, we think your debt-to-income ratio is too high to take on a larger loan. However, you might be able to reduce your debt-to-income ratio if you consolidate your debt into this loan, add more income, or add a co-borrower.</p>
         <p class="mayqualify">You may qualify for more by doing one of the following:</p>
         <div class="counter-offer-cards">
-          <button><img src="/static/img/coborrower.svg">
+          <button><img src="static/img/coborrower.svg">
             <h4>Add a co-borrower</h4>
           </button>
-          <button><img src="/static/img/consolidate.svg">
+          <button><img src="static/img/consolidate.svg">
             <h4>Consolidate your debt</h4>
           </button>
-          <button><img src="/static/img/income.svg">
+          <button><img src="static/img/income.svg">
             <h4>Add more income</h4>
           </button>
         </div>
